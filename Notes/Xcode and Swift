@@ -49,7 +49,7 @@ Lesson 05: Swift Basics - Part I
  * Datatypes
       - String, Bool, Int, Float, Double, Character
 
-Lesson 06: Swift Basics - Part I
+Lesson 06: Swift Basics - Part II
  * Commands in Swift
       - func: Declare a new function
       - print("text \(variable)")
@@ -58,3 +58,5 @@ Lesson 06: Swift Basics - Part I
  * Return value
  * Datatype
       - Void
+
+Lesson 07: Swift Basics - Part III
