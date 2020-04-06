@@ -54,3 +54,4 @@ Lesson 06: Swift Basics - Part I
       - func: Declare a new function
       - print("text \(variable)")
  * Write a function (basic function, function with paraemeters
+ * Use "_" to omit argument label when calling the function
