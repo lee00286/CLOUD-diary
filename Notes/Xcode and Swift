@@ -47,4 +47,4 @@ Lesson 05
       - let: Declare a new constant; Can't assign a new element to existing constant
       - print(<variable>): Print the content (<variable>) of print
  * Datatypes
-      - str, bool, int, float, double, char
+      - String, Bool, Int, Float, Double, Character
