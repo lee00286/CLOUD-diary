@@ -38,25 +38,27 @@ Lesson 04: First User Interface
 
 ### April 6, 2020
 Lesson 05: Swift Basics - Part I
- * What is playground
- * Commands in Swift
+  * What is playground
+  * Commands in Swift
       - UIKit: Library of code that apple provides to build an app with it
           - Contains buttons, labels, templates of codes, etc.
       - //: Write a (one line) comment
       - var: Declare a new variable; can assign a new element to existing variable
       - let: Declare a new constant; Can't assign a new element to existing constant
       - print(<variable>): Print the content (<variable>) of print
- * Datatypes
+  * Datatypes
       - String, Bool, Int, Float, Double, Character
 
 Lesson 06: Swift Basics - Part II
- * Commands in Swift
+  * Commands in Swift
       - func: Declare a new function
       - print("text \(variable)")
- * Write a function (basic function, function with paraemeters
- * Use "_" to omit argument label when calling the function
- * Return value
- * Datatype
+  * Write a function (basic function, function with paraemeters
+  * Use "_" to omit argument label when calling the function
+  * Return value
+  * Datatype
       - Void
 
 Lesson 07: Swift Basics - Part III
+  * Commands in Swift
+      - class: Group functions with the same purpose
