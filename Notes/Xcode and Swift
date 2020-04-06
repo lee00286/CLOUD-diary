@@ -56,3 +56,5 @@ Lesson 06: Swift Basics - Part I
  * Write a function (basic function, function with paraemeters
  * Use "_" to omit argument label when calling the function
  * Return value
+ * Datatype
+      - Void
