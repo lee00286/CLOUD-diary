@@ -3,12 +3,12 @@
 
 ## Notes
 ### April 3, 2020
-Lesson 01
+Lesson 01: Xcode Essentials
   * How to create a new Xcode project (Swift)
   * Xcode Interface
       - Xcode Toolbar, Status Bar, Navigator Area, Editor Area, Utilities Pane
 
-Lesson 02
+Lesson 02: Auto Layout Tutorial
   * Auto Layout: System used to size and position elements on the screen
       - Build user intefaces that accommodate multiple screen sizes
   * x, y, width, height values for an element is referred to as the frame of the element
@@ -17,14 +17,14 @@ Lesson 02
   * exercise) Log-in page
 
 ### April 4, 2020
-Lesson 03
+Lesson 03: Stack Views Tutorial
   * Stack View: User interface element that acts like a container for other elements
       - Arrange elements inside of stack view 
       - Can arrange horizontally or vertically (using library or axis property of stack view)
   * Configure spacing and alignment of the elements inside of stack view
   * exercise) Log-in page (same as lesson 02, but using stack view)
 
-Lesson 04
+Lesson 04: First User Interface
   * Constraint
       - Safe Area: Space that is guaranteed to be unobstructed by things (notch/rounded corners)
       - Can manually select view or safe area
@@ -37,7 +37,7 @@ Lesson 04
   * exercise) Player vs. CPU card game interface
 
 ### April 6, 2020
-Lesson 05
+Lesson 05: Swift Basics - Part I
  * What is playground
  * Commands in Swift
       - UIKit: Library of code that apple provides to build an app with it
