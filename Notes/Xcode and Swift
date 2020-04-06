@@ -40,4 +40,6 @@ Lesson 04
 Lesson 05
  * What is playground
  * Swift
+      - UIKit: Library of code that apple provides to build an app with it
+          - Contains buttons, labels, templates of codes, etc.
       - //: Command to make a comment
