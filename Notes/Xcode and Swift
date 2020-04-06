@@ -43,3 +43,5 @@ Lesson 05
       - UIKit: Library of code that apple provides to build an app with it
           - Contains buttons, labels, templates of codes, etc.
       - //: Command to make a comment
+      - var: declare a new variable
+      - print(<variable>): Print the content (<variable>) of print
