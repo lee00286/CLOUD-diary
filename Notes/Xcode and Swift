@@ -72,3 +72,9 @@ Lesson 08: Connecting Elements
       - : UIViewController: Subclassing; Way for classes to build-off of each other
       - Use "IBOutlet" to access elements inside the storyboard
   * exercise) Edit exercise done in lesson 04
+
+Lesson 09: Inetraction
+  * ViewController.swift
+      - Int.random(in: <start>...<end>): Randomize numbers in range from <start> to the <end>
+      - <UIImageView>.image = UIImage(named: <string>): Assign image asset named <string> to <UIImageView>
+  * exercise) Edit exercise done in lesson 08
