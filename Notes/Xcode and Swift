@@ -65,3 +65,7 @@ Lesson 07: Swift Basics - Part III
           - Method: Functions inside class
           - Property
   * Use "." to access methods and properties inside the class
+
+### April 7, 2020
+Lesson 08: Connecting Elements
+  * : UIViewController: Subclassing; Way for classes to build-off of each other
