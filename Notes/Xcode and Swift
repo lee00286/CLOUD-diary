@@ -73,8 +73,16 @@ Lesson 08: Connecting Elements
       - Use "IBOutlet" to access elements inside the storyboard
   * exercise) Edit exercise done in lesson 04
 
-Lesson 09: Inetraction
+Lesson 09: User Inetraction
   * ViewController.swift
       - Int.random(in: <start>...<end>): Randomize numbers in range from <start> to the <end>
-      - <UIImageView>.image = UIImage(named: <string>): Assign image asset named <string> to <UIImageView>
+      - <name>.image = UIImage(named: <string>): Assign image asset named <string> to <name>
   * exercise) Edit exercise done in lesson 08
+
+Lesson 10: Coding Loggic
+  * ViewController.swift
+      - if, else if, else
+      - &&, ||
+      - <name>.text = "": Assign String "" to <name>
+      - String(<variable>): Convert datatype of <variable> to String
+  * exercise) Edit exercise done in lesson 09
