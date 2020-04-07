@@ -68,4 +68,5 @@ Lesson 07: Swift Basics - Part III
 
 ### April 7, 2020
 Lesson 08: Connecting Elements
-  * : UIViewController: Subclassing; Way for classes to build-off of each other
+  * ViewController.swift
+      - : UIViewController: Subclassing; Way for classes to build-off of each other
