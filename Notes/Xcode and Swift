@@ -79,7 +79,7 @@ Lesson 09: User Inetraction
       - <name>.image = UIImage(named: <string>): Assign image asset named <string> to <name>
   * exercise) Edit exercise done in lesson 08
 
-Lesson 10: Coding Loggic
+Lesson 10: Coding Logic
   * ViewController.swift
       - if, else if, else
       - &&, ||
