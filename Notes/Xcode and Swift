@@ -70,3 +70,4 @@ Lesson 07: Swift Basics - Part III
 Lesson 08: Connecting Elements
   * ViewController.swift
       - : UIViewController: Subclassing; Way for classes to build-off of each other
+      - Use "IBOutlet" to access elements inside the storyboard
