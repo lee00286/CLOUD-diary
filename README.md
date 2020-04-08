@@ -4,3 +4,6 @@ This project is an XCode application on iOS software that functions as a calenda
 ## References
 0. XCode Tutorial
   * https://youtu.be/09TeUXjzpKs
+
+1. Calendar for iOS
+  * https://youtu.be/srJj8U5d5ok
