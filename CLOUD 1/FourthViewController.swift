@@ -18,17 +18,23 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view.
         table.dataSource = self
         // Add title to the navigation bar
-        self.title = "Notes"
+        self.title = "U"
         // Make the title in larger font
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         // Button: Add Note
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNote))
         self.navigationItem.rightBarButtonItem = addButton
+        // Button: Edit Note
+        self.navigationItem.leftBarButtonItem = editButtonItem
     }
     
     // Creates a new note
     @objc func addNote() {
+        // If in editing mode, disable add note functionality
+        if table.isEditing {
+            return
+        }
         // Name of new note
         let name:String = "Item \(data.count + 1)"
         data.insert(name, at: 0)
@@ -48,6 +54,20 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         cell.textLabel?.text = data[indexPath.row]
         return cell
+    }
+    
+    // Edit existing note
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        table.setEditing(editing, animated: animated)
+    }
+    
+    // Edit content
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        // Remove data
+        data.remove(at: indexPath.row)
+        // Update table (remove row)
+        table.deleteRows(at: [indexPath], with: .fade)
     }
     
 
