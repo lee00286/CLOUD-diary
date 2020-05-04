@@ -17,6 +17,9 @@ class FourthViewController: UIViewController, UITableViewDataSource {
 
         // Do any additional setup after loading the view.
         table.dataSource = self
+        // Add title to the navigation bar
+        self.title = "Notes"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     // Number of rows in section
