@@ -15,21 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Float your life story up in the sky" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-8v-5I8">
-                                <rect key="frame" x="30" y="489.5" width="354" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Float your life story up in the sky" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-8v-5I8">
+                                <rect key="frame" x="30" y="481.5" width="354" height="25.5"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CLOUD" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hnm-Uy-V8w">
-                                <rect key="frame" x="24" y="344" width="360" height="135.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CLOUD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hnm-Uy-V8w">
+                                <rect key="frame" x="24" y="344" width="360" height="127.5"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="90"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="rtk-8v-5I8" firstAttribute="top" secondItem="Hnm-Uy-V8w" secondAttribute="bottom" constant="10" id="OPX-Tp-DFx"/>
-                            <constraint firstItem="Hnm-Uy-V8w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="dqU-Np-St3"/>
+                            <constraint firstItem="Hnm-Uy-V8w" firstAttribute="trailing" secondItem="rtk-8v-5I8" secondAttribute="trailing" id="CRl-hv-Pbt"/>
+                            <constraint firstItem="rtk-8v-5I8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dgu-VD-cTK"/>
+                            <constraint firstItem="Hnm-Uy-V8w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="V6p-DX-Hnm"/>
+                            <constraint firstItem="Hnm-Uy-V8w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="fk4-AD-YmI"/>
+                            <constraint firstItem="rtk-8v-5I8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="qXy-uN-iWz"/>
+                            <constraint firstItem="rtk-8v-5I8" firstAttribute="top" secondItem="Hnm-Uy-V8w" secondAttribute="bottom" constant="10" id="tLq-nF-gF8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
