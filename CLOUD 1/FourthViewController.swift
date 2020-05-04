@@ -19,7 +19,23 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         table.dataSource = self
         // Add title to the navigation bar
         self.title = "Notes"
+        // Make the title in larger font
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        // Button: Add Note
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNote))
+        self.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    // Creates a new note
+    @objc func addNote() {
+        // Name of new note
+        let name:String = "Item \(data.count + 1)"
+        data.insert(name, at: 0)
+        // Add row
+        let indexPath:IndexPath = IndexPath(row: 0, section: 0)
+        // Insert animation (automatic is the animation type)
+        table.insertRows(at: [indexPath], with: .automatic)
     }
     
     // Number of rows in section
