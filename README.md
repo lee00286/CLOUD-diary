@@ -11,3 +11,7 @@ This project is an XCode application on iOS software that functions as a calenda
 2. Background for LaunchScreen
   * Pixabay License: Free for commercial use, no attribution required
   * https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/
+
+3. Note on FourthViewController
+  * LinkedIn Learning: Building a Note-Taking App for iOS 11 with Swift
+  * https://www.linkedin.com/learning/building-a-note-taking-app-for-ios-11-with-swift/
