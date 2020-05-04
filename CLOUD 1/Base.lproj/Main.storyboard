@@ -203,11 +203,44 @@
                     <navigationItem key="navigationItem" id="kxz-Zk-twU"/>
                     <connections>
                         <outlet property="table" destination="caR-1b-Yvl" id="CiV-Ym-SzA"/>
+                        <segue destination="CAi-Xw-kVm" kind="show" identifier="detail" id="swb-zV-jPj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgh-Yr-q7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="1585"/>
+        </scene>
+        <!--Note-->
+        <scene sceneID="yHS-Rm-WhR">
+            <objects>
+                <viewController title="Note" id="CAi-Xw-kVm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzd-SA-Obj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="47l-kv-dZA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="47l-kv-dZA" firstAttribute="top" secondItem="EUI-7O-VcN" secondAttribute="top" id="Aj7-d0-WRe"/>
+                            <constraint firstItem="47l-kv-dZA" firstAttribute="leading" secondItem="EUI-7O-VcN" secondAttribute="leading" id="SiF-MB-vcy"/>
+                            <constraint firstItem="47l-kv-dZA" firstAttribute="centerX" secondItem="rzd-SA-Obj" secondAttribute="centerX" id="ji6-9H-XEg"/>
+                            <constraint firstItem="47l-kv-dZA" firstAttribute="bottom" secondItem="EUI-7O-VcN" secondAttribute="bottom" id="qvr-rI-89A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EUI-7O-VcN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sO0-g9-FdV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em1-es-FJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="2340.4017857142858"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Mww-8v-DvC">

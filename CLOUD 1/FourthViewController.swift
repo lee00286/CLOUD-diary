@@ -8,15 +8,19 @@
 
 import UIKit
 
-class FourthViewController: UIViewController, UITableViewDataSource {
+class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
-    var data:[String] = ["Item 1", "Item 2", "Item 3"]
+    var data:[String] = ["Example Note"]
+    // Save data persistantly in the file
+    var fileURL:URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         table.dataSource = self
+        table.delegate = self
+        
         // Add title to the navigation bar
         self.title = "U"
         // Make the title in larger font
@@ -27,6 +31,12 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.rightBarButtonItem = addButton
         // Button: Edit Note
         self.navigationItem.leftBarButtonItem = editButtonItem
+        
+        let baseURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        fileURL = baseURL.appendingPathComponent("notes.txt")
+        
+        // Load save memory
+        load()
     }
     
     // Creates a new note
@@ -42,6 +52,9 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         // Insert animation (automatic is the animation type)
         table.insertRows(at: [indexPath], with: .automatic)
+        
+        // Connect to note page
+        self.performSegue(withIdentifier: "detail", sender: nil)
     }
     
     // Number of rows in section
@@ -68,6 +81,34 @@ class FourthViewController: UIViewController, UITableViewDataSource {
         data.remove(at: indexPath.row)
         // Update table (remove row)
         table.deleteRows(at: [indexPath], with: .fade)
+        // Save
+        save()
+    }
+    
+    // Delegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Transition between views
+        self.performSegue(withIdentifier: "detail", sender: nil)
+    }
+    
+    // Save data
+    func save() {
+        // Save any type of data
+        let a = NSArray(array: data)
+        do {
+            try a.write(to: fileURL)
+        } catch {
+            print("error writing file")
+        }
+    }
+    
+    // Load data
+    func load() {
+        // If there's saved data
+        if let loadedData:[String] = NSArray(contentsOf: fileURL) as? [String] {
+            data = loadedData
+            table.reloadData()
+        }
     }
     
 
