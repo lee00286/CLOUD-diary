@@ -213,7 +213,7 @@
         <!--Note-->
         <scene sceneID="yHS-Rm-WhR">
             <objects>
-                <viewController title="Note" id="CAi-Xw-kVm" sceneMemberID="viewController">
+                <viewController title="Note" id="CAi-Xw-kVm" customClass="FourthDetailViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rzd-SA-Obj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,6 +237,9 @@
                         <viewLayoutGuide key="safeArea" id="EUI-7O-VcN"/>
                     </view>
                     <navigationItem key="navigationItem" id="sO0-g9-FdV"/>
+                    <connections>
+                        <outlet property="textView" destination="47l-kv-dZA" id="4hh-LA-dZI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em1-es-FJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
