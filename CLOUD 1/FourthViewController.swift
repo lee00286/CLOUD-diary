@@ -11,6 +11,8 @@ import UIKit
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
     var data:[String] = ["Example Note"]
+    var selectedRow:Int = -1
+    var newRowText:String = ""
     // Save data persistantly in the file
     var fileURL:URL!
     
@@ -52,6 +54,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
         // Insert animation (automatic is the animation type)
         table.insertRows(at: [indexPath], with: .automatic)
+        table.selectRow(at: indexPath, animated: true, scrollPosition: .none)
         
         // Connect to note page
         self.performSegue(withIdentifier: "detail", sender: nil)
@@ -89,6 +92,14 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Transition between views
         self.performSegue(withIdentifier: "detail", sender: nil)
+    }
+    
+    // setText
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailView:FourthDetailViewController = segue.destination as! FourthDetailViewController
+        selectedRow = table.indexPathForSelectedRow!.row
+        //detailView.masterView = self
+        detailView.setText(t: data[selectedRow])
     }
     
     // Save data

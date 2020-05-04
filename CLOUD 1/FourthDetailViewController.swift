@@ -10,12 +10,21 @@ import UIKit
 
 class FourthDetailViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
+    var text:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        textView.text = "New Note"
+        textView.text = text
+    }
+    
+    func setText(t: String) {
+        text = t
+        // If view is not loaded, then update the textView
+        if isViewLoaded {
+            textView.text = t
+        }
     }
     
 
