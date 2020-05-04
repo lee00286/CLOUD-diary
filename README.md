@@ -7,3 +7,7 @@ This project is an XCode application on iOS software that functions as a calenda
 
 1. Calendar for iOS
   * https://youtu.be/srJj8U5d5ok
+
+2. Background for LaunchScreen
+  * Pixabay License: Free for commercial use, no attribution required
+  * https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/
