@@ -10,7 +10,7 @@ import UIKit
 
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
-    var data:[String] = ["Example Note"]
+    var data:[String] = []
     var selectedRow:Int = -1
     var newRowText:String = ""
     // Save data persistantly in the file
@@ -27,6 +27,8 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
         self.title = "U"
         // Make the title in larger font
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        // Always show the large title
+        self.navigationItem.largeTitleDisplayMode = .always
         
         // Button: Add Note
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNote))
@@ -41,6 +43,20 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
         load()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if selectedRow == -1 {
+            return
+        }
+        data[selectedRow] = newRowText
+        // If there's no text inside, automatically delete note
+        if newRowText == "" {
+            data.remove(at: selectedRow)
+        }
+        table.reloadData()
+        save()
+    }
+    
     // Creates a new note
     @objc func addNote() {
         // If in editing mode, disable add note functionality
@@ -48,7 +64,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
             return
         }
         // Name of new note
-        let name:String = "Item \(data.count + 1)"
+        let name:String = ""
         data.insert(name, at: 0)
         // Add row
         let indexPath:IndexPath = IndexPath(row: 0, section: 0)
@@ -98,7 +114,7 @@ class FourthViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let detailView:FourthDetailViewController = segue.destination as! FourthDetailViewController
         selectedRow = table.indexPathForSelectedRow!.row
-        //detailView.masterView = self
+        detailView.masterView = self
         detailView.setText(t: data[selectedRow])
     }
     

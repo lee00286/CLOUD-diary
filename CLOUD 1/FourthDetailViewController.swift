@@ -9,14 +9,24 @@
 import UIKit
 
 class FourthDetailViewController: UIViewController {
+    // Connection between textView and FourthDetailViewController class
     @IBOutlet weak var textView: UITextView!
     var text:String = ""
+    var masterView:FourthViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         textView.text = text
+        
+        // Make title be small inside the note
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        textView.becomeFirstResponder()
     }
     
     func setText(t: String) {
@@ -27,6 +37,11 @@ class FourthDetailViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        masterView.newRowText = textView.text
+        textView.resignFirstResponder()
+    }
 
     /*
     // MARK: - Navigation
