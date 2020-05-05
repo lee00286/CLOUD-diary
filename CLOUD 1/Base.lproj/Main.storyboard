@@ -257,7 +257,79 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGD-xs-gZS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1251" y="0.0"/>
+            <point key="canvasLocation" x="-5357" y="0.0"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="URy-mm-tjz">
+            <objects>
+                <viewController id="cOQ-yO-n9O" customClass="SignupViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j7C-gL-qlJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5pu-wU-LPu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yT-HG-eQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1759" y="-394"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="8gX-V0-hjY">
+            <objects>
+                <viewController id="Swn-zs-zIi" customClass="LoginViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfz-7M-MUT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="K8L-5h-mBt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7S-jS-3Ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1759" y="394"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="LuC-Qn-Fqt">
+            <objects>
+                <viewController id="zc8-Ot-b0P" customClass="LoginViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkd-dt-3Qq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-4P-5Uy">
+                                <rect key="frame" x="40" y="732" width="334" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNQ-sM-NA6">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="k7f-Lz-a3I"/>
+                                        </constraints>
+                                        <state key="normal" title="Signup"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdM-Bp-4x2">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zdM-Bp-4x2" firstAttribute="height" secondItem="oNQ-sM-NA6" secondAttribute="height" multiplier="0.75" id="qm5-zm-ylo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vtV-Sb-W04" firstAttribute="bottom" secondItem="8zz-4P-5Uy" secondAttribute="bottom" constant="40" id="ZAP-Yf-cxx"/>
+                            <constraint firstItem="vtV-Sb-W04" firstAttribute="trailing" secondItem="8zz-4P-5Uy" secondAttribute="trailing" constant="40" id="dGI-4z-FZo"/>
+                            <constraint firstItem="8zz-4P-5Uy" firstAttribute="leading" secondItem="vtV-Sb-W04" secondAttribute="leading" constant="40" id="hqx-aR-Nve"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vtV-Sb-W04"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Akd-w4-s90"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGI-xh-DKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2839" y="0.0"/>
         </scene>
         <!--U-->
         <scene sceneID="5hO-lc-tEM">
@@ -277,6 +349,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcG-hK-0Wi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="827"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kn4-Ky-l7h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Lk7-Qv-GA8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J1n-2H-gVb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zc8-Ot-b0P" kind="relationship" relationship="rootViewController" id="HzV-vo-3EN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb1-bY-ROu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3819" y="0.0"/>
         </scene>
     </scenes>
     <resources>
