@@ -296,6 +296,9 @@
                                             <constraint firstAttribute="height" constant="40" id="8Zo-d9-6Va"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="cOQ-yO-n9O" eventType="touchUpInside" id="VU3-ml-VIz"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocj-Rw-dH7">
                                         <rect key="frame" x="0.0" y="300" width="334" height="20.5"/>
@@ -321,6 +324,14 @@
                         <viewLayoutGuide key="safeArea" id="5pu-wU-LPu"/>
                     </view>
                     <navigationItem key="navigationItem" id="EXt-vp-fzm"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zWB-FC-fhS" id="TM7-Mh-2Fp"/>
+                        <outlet property="errorLabel" destination="ocj-Rw-dH7" id="ZMC-6D-dcH"/>
+                        <outlet property="firstNameTextField" destination="pd5-d8-g24" id="ffx-m9-q45"/>
+                        <outlet property="lastNameTextField" destination="H1l-OJ-kM5" id="JIt-X5-9ID"/>
+                        <outlet property="passwordTextField" destination="Wst-w1-cZL" id="nHN-NN-jCZ"/>
+                        <outlet property="signUpButton" destination="qOE-OK-tzJ" id="xaW-iS-YRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0yT-HG-eQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,6 +364,9 @@
                                             <constraint firstAttribute="height" constant="40" id="5ob-fm-kWA"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="Swn-zs-zIi" eventType="touchUpInside" id="Xc6-fY-ndl"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-fy-dfM">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.5"/>
@@ -376,6 +390,12 @@
                         <viewLayoutGuide key="safeArea" id="K8L-5h-mBt"/>
                     </view>
                     <navigationItem key="navigationItem" id="FDt-iR-oAw"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="Nv3-fy-dfM" id="yar-bN-0Id"/>
+                        <outlet property="firstNameTextField" destination="k6k-bP-SWl" id="sGs-Yh-jws"/>
+                        <outlet property="lastNameTextField" destination="VOg-5u-5ek" id="Clb-td-g6V"/>
+                        <outlet property="loginButton" destination="bjS-er-I4Q" id="ma8-bJ-duZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7S-jS-3Ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
