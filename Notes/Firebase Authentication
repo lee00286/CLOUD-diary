@@ -17,4 +17,11 @@
   v. Copy and paste [pod 'Firebase/Analytics'] into the file (right before [end])
   vi. Copy and paste [pod 'Firebase/Auth'] into the file (after the previous line)
   vii. Type [pod install] in terminal (fetch all the libraries we need)
-  viii. Open .xcworkspace file (generated in the previous step)
+5. Open .xcworkspace file (generated in the previous step)
+  * Check if the project still runs by pressing command + B
+6. Add initialization code
+  i. Go to Project Name >> Project Name Folder >> AppDelegate.swift 
+  ii. Type [import Firebase]
+  iii. Type [FirebaseApp.configure()] under didFinishLaunchingWithOptions
+  iv. Run the code by pressing command + R
+7. Verify installation
