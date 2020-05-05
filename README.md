@@ -12,6 +12,11 @@ This project is an XCode application on iOS software that functions as a calenda
   * Pixabay License: Free for commercial use, no attribution required
   * https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/
 
-3. Note on FourthViewController
+3. SignUp/Login Page
+  * YouTube CodeWithChris: Firebase Authentication Tutorial 2020
+  * YouTube Link: https://youtu.be/1HN7usMROt8
+  * Firebase Authentication: https://firebase.google.com/
+
+4. FourthViewController
   * LinkedIn Learning: Building a Note-Taking App for iOS 11 with Swift
-  * https://www.linkedin.com/learning/building-a-note-taking-app-for-ios-11-with-swift/
+  * LinkedIn Link: https://www.linkedin.com/learning/building-a-note-taking-app-for-ios-11-with-swift/
