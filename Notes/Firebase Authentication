@@ -4,6 +4,7 @@
 
 ## Notes
 ### May 5, 2020
+Set up Project
 1. Add Firebase to your iOS app (register app)
   i. Get bundle identifier from your project
 2. Download generated configuration file
@@ -25,3 +26,10 @@
   iii. Type [FirebaseApp.configure()] under didFinishLaunchingWithOptions
   iv. Run the code by pressing command + R
 7. Verify installation
+8. Go back to the console (it will move automatically)
+
+Develop
+1. Set up Sign-in method
+  i. Enable Email/Password authentication
+  ii. Add user
+2. Create database
