@@ -5,6 +5,12 @@
 ## Notes
 ### May 5, 2020
 1. Add Firebase to your iOS app (register app)
-  i Get bundle identifier from your project
+  i. Get bundle identifier from your project
 2. Download generated configuration file
 3. Drag configuration file to project
+  * Enable "Copy items if needed", "Create groups", and "Add to targets"
+4. Add Firebaase SDK
+  i. Download CocoaPods
+  ii. Move to the folder where your project is in (you should see .xcodeproj file on the current directory)
+  iii. Type '''pod init''' (Create Podfile)
+  iv. Open Podfile with TextEdit app
