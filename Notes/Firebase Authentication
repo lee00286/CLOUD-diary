@@ -12,7 +12,8 @@
 4. Add Firebase SDK
   i. Download CocoaPods
   ii. Move to the folder where your project is in (you should see .xcodeproj file on the current directory)
-  iii. Type [pod init] (Create Podfile)
+  iii. Type [pod init] in terminal (Create Podfile)
   iv. Open Podfile with TextEdit app
   v. Copy and paste [pod 'Firebase/Analytics'] into the file (right before [end])
   vi. Copy and paste [pod 'Firebase/Auth'] into the file (after the previous line)
+  vii. Type [pod install] in terminal (Fetch all the libraries we need)
