@@ -15,3 +15,4 @@
   iii. Type [pod init] (Create Podfile)
   iv. Open Podfile with TextEdit app
   v. Copy and paste [pod 'Firebase/Analytics'] into the file (right before [end])
+  vi. Copy and paste [pod 'Firebase/Auth'] into the file (after the previous line)
