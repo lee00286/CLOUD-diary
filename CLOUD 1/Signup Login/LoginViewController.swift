@@ -1,5 +1,5 @@
 //
-//  SignupViewController.swift
+//  LoginViewController.swift
 //  CLOUD 1
 //
 //  Created by Lee Yena on 2020-05-05.
@@ -8,18 +8,27 @@
 
 import UIKit
 
-class SignupViewController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        // Hide the error label
+        errorLabel.alpha = 0
+        
+        // Style the elements
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleFilledButton(loginButton)
     }
     
 
@@ -32,7 +41,8 @@ class SignupViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func signUpTapped(_ sender: Any) {
+    
+    @IBAction func loginTapped(_ sender: Any) {
     }
+    
 }
