@@ -1,0 +1,10 @@
+## Firebase Authentication Tutorial Reference
+  * https://youtu.be/1HN7usMROt8
+  * Create Firebase Project: https://firebase.google.com/
+
+## Notes
+### May 5, 2020
+1. Add Firebase to your iOS app (register app)
+  i Get bundle identifier from your project
+2. Download generated configuration file
+3. Drag configuration file to project
