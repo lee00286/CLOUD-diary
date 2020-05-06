@@ -147,6 +147,46 @@
             </objects>
             <point key="canvasLocation" x="912" y="0.0"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="pA9-ML-pmx">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="fir-le-C3G" customClass="HomeViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAm-ee-adh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GS2-wh-k9z">
+                                <rect key="frame" x="181" y="388" width="52" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-Nt-Y32">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="INg-Su-0Jx"/>
+                                        </constraints>
+                                        <state key="normal" title="Menu 1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPw-rQ-77N">
+                                        <rect key="frame" x="0.0" y="70" width="52" height="50"/>
+                                        <state key="normal" title="Menu 2"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TPw-rQ-77N" firstAttribute="height" secondItem="qpg-Nt-Y32" secondAttribute="height" id="dm1-a6-JIh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GS2-wh-k9z" firstAttribute="centerY" secondItem="ZAm-ee-adh" secondAttribute="centerY" id="poU-iO-YKy"/>
+                            <constraint firstItem="GS2-wh-k9z" firstAttribute="centerX" secondItem="ZAm-ee-adh" secondAttribute="centerX" id="xWU-v9-z13"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0pi-Zd-9Ka"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFr-Vs-UMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-917" y="0.0"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>

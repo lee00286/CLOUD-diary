@@ -8,9 +8,11 @@ target 'CLOUD 1' do
   # Pods for CLOUD 1
 
   # add the Firebase pod for Google Analytics
- 	pod 'Firebase/Analytics'
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
+	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
 
 end
