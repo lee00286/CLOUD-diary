@@ -4,6 +4,7 @@
 
 ## Notes
 ### May 5, 2020
+Set up Project
 1. Add Firebase to your iOS app (register app)
   i. Get bundle identifier from your project
 2. Download generated configuration file
@@ -16,7 +17,9 @@
   iv. Open Podfile with TextEdit app
   v. Copy and paste [pod 'Firebase/Analytics'] into the file (right before [end])
   vi. Copy and paste [pod 'Firebase/Auth'] into the file (after the previous line)
-  vii. Type [pod install] in terminal (fetch all the libraries we need)
+  vii. Copy and paste [pod 'Firebase/Core'] into the file (after the previous line)
+  viii. Copy and paste [pod 'Firebase/Firestore'] into the file (after the previous line)
+  x. Type [pod install] in terminal (fetch all the libraries we need)
 5. Open .xcworkspace file (generated in the previous step)
   * Check if the project still runs by pressing command + B
 6. Add initialization code
@@ -25,3 +28,13 @@
   iii. Type [FirebaseApp.configure()] under didFinishLaunchingWithOptions
   iv. Run the code by pressing command + R
 7. Verify installation
+8. Go back to the console (it will move automatically)
+
+Develop
+1. Set up Sign-in method
+  i. Enable Email/Password authentication
+  ii. Add user
+2. Create database
+  i. Start a new collection
+  ii. Pass the new user's email address and password to [createUserWithEmail:email:password:completion:]
+  iii. Initialize instance of Cloud Firestore by [let db = Firestore.firestore()]
