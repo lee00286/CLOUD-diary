@@ -8,9 +8,11 @@ This project is an XCode application on iOS software that functions as a calenda
 1. Calendar for iOS
   * https://youtu.be/srJj8U5d5ok
 
-2. Background for LaunchScreen
+2. Photos
   * Pixabay License: Free for commercial use, no attribution required
-  * https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/
+  * Background for LaunchScreen: https://pixabay.com/photos/sky-clouds-sunlight-dark-690293/
+  * Backgroud for Main Home (LIFE): https://pixabay.com/photos/holiday-travel-vacation-summer-2880261/
+  * Backgroud for Main Home (STUDENT): https://pixabay.com/photos/knowledge-book-library-glasses-1052010/
 
 3. SignUp/Login Page
   * YouTube CodeWithChris: Firebase Authentication Tutorial 2020
