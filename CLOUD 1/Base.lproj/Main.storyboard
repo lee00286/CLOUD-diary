@@ -718,7 +718,7 @@
         <!--Reminders View Controller-->
         <scene sceneID="lA7-6Y-urP">
             <objects>
-                <viewController id="WpW-DZ-aa5" userLabel="Reminders View Controller" sceneMemberID="viewController">
+                <viewController id="WpW-DZ-aa5" userLabel="Reminders View Controller" customClass="AddTaskViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxd-Pb-5Nz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -777,6 +777,14 @@
                     <navigationItem key="navigationItem" title="Add To-Do Action" id="Ukb-JL-5DJ">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="uqj-KV-MSC"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="taskCourseOutlet" destination="yIy-a3-Pzc" id="ITw-EE-K11"/>
+                        <outlet property="taskDetailOutlet" destination="pgb-ew-S6n" id="OBO-G0-ale"/>
+                        <outlet property="taskDueDateOutlet" destination="fdy-Rn-eyn" id="zsx-0H-Ua9"/>
+                        <outlet property="taskNameOutlet" destination="FtV-Ob-hbC" id="kER-5F-gZc"/>
+                        <outlet property="taskPriorityOutlet" destination="7MY-zH-8Vg" id="sII-mW-xMO"/>
+                        <outlet property="taskTypeOutlet" destination="lNN-mo-yKS" id="47B-Yu-CJk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncc-nb-CT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

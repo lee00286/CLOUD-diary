@@ -15,6 +15,7 @@
 		CD75F164246141E90038FE69 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD75F163246141E90038FE69 /* LoginSignUpViewController.swift */; };
 		CD75F1662461483B0038FE69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD75F1652461483B0038FE69 /* GoogleService-Info.plist */; };
 		CDD05D722462DB9300BB4B7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD05D712462DB9300BB4B7A /* HomeViewController.swift */; };
+		CDDB964624632A0B005324AA /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB964524632A0B005324AA /* AddTaskViewController.swift */; };
 		CDECDE822462F0C9000A3887 /* StudentThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECDE812462F0C9000A3887 /* StudentThirdViewController.swift */; };
 		CDECDE8924630382000A3887 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDECDE8824630382000A3887 /* TaskCell.swift */; };
 		CDED178C245F1D850050058C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED178B245F1D840050058C /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		CD75F163246141E90038FE69 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		CD75F1652461483B0038FE69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDD05D712462DB9300BB4B7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CDDB964524632A0B005324AA /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		CDECDE812462F0C9000A3887 /* StudentThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentThirdViewController.swift; sourceTree = "<group>"; };
 		CDECDE8824630382000A3887 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		CDED1788245F1D840050058C /* CLOUD 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CLOUD 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 			children = (
 				CDECDE812462F0C9000A3887 /* StudentThirdViewController.swift */,
 				CDECDE8824630382000A3887 /* TaskCell.swift */,
+				CDDB964524632A0B005324AA /* AddTaskViewController.swift */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				CD75F164246141E90038FE69 /* LoginSignUpViewController.swift in Sources */,
 				CDED17A2245FFDA60050058C /* ThirdViewController.swift in Sources */,
 				CDED178C245F1D850050058C /* AppDelegate.swift in Sources */,
+				CDDB964624632A0B005324AA /* AddTaskViewController.swift in Sources */,
 				CDECDE8924630382000A3887 /* TaskCell.swift in Sources */,
 				CDED178E245F1D850050058C /* SceneDelegate.swift in Sources */,
 				CD75F15C246130F40038FE69 /* LoginViewController.swift in Sources */,
