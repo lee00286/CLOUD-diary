@@ -33,3 +33,5 @@ Develop
   i. Enable Email/Password authentication
   ii. Add user
 2. Create database
+  i. Start a new collection
+  ii. Pass the new user's email address and password to [createUserWithEmail:email:password:completion:]
