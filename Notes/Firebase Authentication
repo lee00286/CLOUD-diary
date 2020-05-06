@@ -37,3 +37,4 @@ Develop
 2. Create database
   i. Start a new collection
   ii. Pass the new user's email address and password to [createUserWithEmail:email:password:completion:]
+  iii. Initialize instance of Cloud Firestore by [let db = Firestore.firestore()]
