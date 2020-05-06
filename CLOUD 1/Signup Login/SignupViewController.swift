@@ -34,7 +34,7 @@ class SignupViewController: UIViewController {
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(signUpButton)
+        //Utilities.styleFilledButton(signUpButton)
     }
     
 
@@ -100,13 +100,9 @@ class SignupViewController: UIViewController {
                     
                     // Transition to the home screen
                     self.transitionToHome()
-                }
-                
-            }
-            
-            
-            
-        }
+                } // end else
+            } // end createUser
+        } // end else
     }
     
     func showError(_ message:String) {

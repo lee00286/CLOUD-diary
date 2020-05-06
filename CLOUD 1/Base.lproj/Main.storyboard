@@ -388,12 +388,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hGY-Bg-W70">
                                 <rect key="frame" x="40" y="84" width="334" height="230.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k6k-bP-SWl">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k6k-bP-SWl">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOg-5u-5ek">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOg-5u-5ek">
                                         <rect key="frame" x="0.0" y="70" width="334" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -408,7 +408,7 @@
                                             <action selector="loginTapped:" destination="Swn-zs-zIi" eventType="touchUpInside" id="Xc6-fY-ndl"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-fy-dfM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-fy-dfM">
                                         <rect key="frame" x="0.0" y="210" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -431,10 +431,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="FDt-iR-oAw"/>
                     <connections>
+                        <outlet property="emailTextField" destination="k6k-bP-SWl" id="ORN-Zd-4YL"/>
                         <outlet property="errorLabel" destination="Nv3-fy-dfM" id="yar-bN-0Id"/>
-                        <outlet property="firstNameTextField" destination="k6k-bP-SWl" id="sGs-Yh-jws"/>
-                        <outlet property="lastNameTextField" destination="VOg-5u-5ek" id="Clb-td-g6V"/>
                         <outlet property="loginButton" destination="bjS-er-I4Q" id="ma8-bJ-duZ"/>
+                        <outlet property="passwordTextField" destination="VOg-5u-5ek" id="LZn-q4-rTS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7S-jS-3Ol" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -450,7 +450,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8zz-4P-5Uy">
-                                <rect key="frame" x="40" y="714.5" width="334" height="107.5"/>
+                                <rect key="frame" x="40" y="394.5" width="334" height="107.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNQ-sM-NA6">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -477,8 +477,8 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vtV-Sb-W04" firstAttribute="bottom" secondItem="8zz-4P-5Uy" secondAttribute="bottom" constant="40" id="ZAP-Yf-cxx"/>
                             <constraint firstItem="vtV-Sb-W04" firstAttribute="trailing" secondItem="8zz-4P-5Uy" secondAttribute="trailing" constant="40" id="dGI-4z-FZo"/>
+                            <constraint firstItem="8zz-4P-5Uy" firstAttribute="centerY" secondItem="dkd-dt-3Qq" secondAttribute="centerY" id="dqA-hN-RD0"/>
                             <constraint firstItem="8zz-4P-5Uy" firstAttribute="leading" secondItem="vtV-Sb-W04" secondAttribute="leading" constant="40" id="hqx-aR-Nve"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vtV-Sb-W04"/>

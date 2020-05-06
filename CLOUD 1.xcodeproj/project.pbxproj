@@ -99,6 +99,13 @@
 			path = "Signup Login";
 			sourceTree = "<group>";
 		};
+		CDECDE7D2462E2F1000A3887 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		CDED177F245F1D840050058C = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +127,7 @@
 		CDED178A245F1D840050058C /* CLOUD 1 */ = {
 			isa = PBXGroup;
 			children = (
+				CDECDE7D2462E2F1000A3887 /* Media */,
 				CDED178B245F1D840050058C /* AppDelegate.swift */,
 				CDED178D245F1D850050058C /* SceneDelegate.swift */,
 				CD75F163246141E90038FE69 /* LoginSignUpViewController.swift */,
