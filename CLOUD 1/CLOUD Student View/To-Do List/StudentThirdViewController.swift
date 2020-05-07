@@ -8,9 +8,11 @@
 
 import UIKit
 
-class StudentThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class StudentThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AddToDo {
 
     var tasks: [Task] = []
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,17 @@ class StudentThirdViewController: UIViewController, UITableViewDelegate, UITable
         }
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddTaskViewController
+        vc.delegate = self
+    }
+    
+    // Save and add To-Do task
+    func addToDo(name: String) {
+        tasks.append(Task(name: name))
+        tableView.reloadData()
     }
 }
 
