@@ -14,7 +14,7 @@ This project is an XCode application on iOS software that functions as a calenda
   * Backgroud for Main Home (LIFE): https://pixabay.com/photos/holiday-travel-vacation-summer-2880261/
   * Backgroud for Main Home (STUDENT): https://pixabay.com/photos/knowledge-book-library-glasses-1052010/
 
-3. SignUp/Login Page
+3. SignUp/Login Page (in test-mode now)
   * YouTube CodeWithChris: Firebase Authentication Tutorial 2020
   * YouTube Link: https://youtu.be/1HN7usMROt8
   * Firebase Authentication: https://firebase.google.com/
@@ -23,6 +23,6 @@ This project is an XCode application on iOS software that functions as a calenda
   * LinkedIn Learning: Building a Note-Taking App for iOS 11 with Swift
   * LinkedIn Link: https://www.linkedin.com/learning/building-a-note-taking-app-for-ios-11-with-swift/
 
-5. Student: ThirdViewController
+5. Student: ThirdViewController (add to-do doesn't work now)
   * YouTube Riley Norris: To-do App in Swift
   * YouTube Link: https://youtu.be/orkHnbhjBJs
