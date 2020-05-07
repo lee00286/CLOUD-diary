@@ -124,8 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				CDECDE812462F0C9000A3887 /* StudentThirdViewController.swift */,
-				CDECDE8824630382000A3887 /* TaskCell.swift */,
 				CDDB964524632A0B005324AA /* AddTaskViewController.swift */,
+				CDECDE8824630382000A3887 /* TaskCell.swift */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";

@@ -11,8 +11,8 @@ import UIKit
 class FourthDetailViewController: UIViewController {
     // Connection between textView and FourthDetailViewController class
     @IBOutlet weak var textView: UITextView!
-    var text:String = ""
-    var masterView:FourthViewController!
+    var text: String = ""
+    var masterView: FourthViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()

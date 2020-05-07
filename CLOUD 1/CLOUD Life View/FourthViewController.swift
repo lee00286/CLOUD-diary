@@ -10,11 +10,11 @@ import UIKit
 
 class FourthViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
-    var data:[String] = []
-    var selectedRow:Int = -1
-    var newRowText:String = ""
+    var data: [String] = []
+    var selectedRow: Int = -1
+    var newRowText: String = ""
     // Save data persistantly in the file
-    var fileURL:URL!
+    var fileURL: URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()

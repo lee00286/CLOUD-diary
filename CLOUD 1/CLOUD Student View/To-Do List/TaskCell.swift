@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CheckBox {
+    func checkBox(state: Bool, index: Int?)
+}
+
 class TaskCell: UITableViewCell {
     @IBOutlet weak var checkBoxOutlet: UIButton!
     @IBOutlet weak var taskNameLabel: UILabel!
@@ -24,6 +28,15 @@ class TaskCell: UITableViewCell {
     }
     
     @IBAction func checkBoxAction(_ sender: Any) {
+        if tasks![indexPath!].checked {
+            delegate?.checkBox(state: false, index: indexPath!)
+        }
+        else {
+            delegate?.checkBox(state: true, index: indexPath!)
+        }
     }
     
+    var delegate: CheckBox?
+    var indexPath: Int?
+    var tasks: [Task]?
 }
