@@ -681,7 +681,7 @@
         <!--Reminders View Controller-->
         <scene sceneID="lA7-6Y-urP">
             <objects>
-                <viewController title="Add To-Do Action" id="WpW-DZ-aa5" userLabel="Reminders View Controller" sceneMemberID="viewController">
+                <viewController title="Add To-Do Action" id="WpW-DZ-aa5" userLabel="Reminders View Controller" customClass="ThirdStudentDetailViewController" customModule="CLOUD_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxd-Pb-5Nz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -750,13 +750,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ukb-JL-5DJ"/>
                     <connections>
+                        <outlet property="courseToDo" destination="yIy-a3-Pzc" id="8Iz-NM-wep"/>
+                        <outlet property="detailToDo" destination="pgb-ew-S6n" id="cNK-CT-cNC"/>
+                        <outlet property="duedateToDo" destination="fdy-Rn-eyn" id="Z7K-2p-jec"/>
                         <outlet property="inputOutlet" destination="P79-Yg-0TC" id="Yuo-Ys-bIb"/>
+                        <outlet property="priorityToDo" destination="7MY-zH-8Vg" id="HeZ-bK-h4U"/>
                         <outlet property="taskCourseOutlet" destination="yIy-a3-Pzc" id="ITw-EE-K11"/>
                         <outlet property="taskDetailOutlet" destination="pgb-ew-S6n" id="OBO-G0-ale"/>
                         <outlet property="taskDueDateOutlet" destination="fdy-Rn-eyn" id="zsx-0H-Ua9"/>
                         <outlet property="taskNameOutlet" destination="FtV-Ob-hbC" id="kER-5F-gZc"/>
                         <outlet property="taskPriorityOutlet" destination="7MY-zH-8Vg" id="sII-mW-xMO"/>
                         <outlet property="taskTypeOutlet" destination="lNN-mo-yKS" id="47B-Yu-CJk"/>
+                        <outlet property="titleToDo" destination="FtV-Ob-hbC" id="bYP-Kz-eq4"/>
+                        <outlet property="typeToDo" destination="lNN-mo-yKS" id="9x8-Ct-MQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncc-nb-CT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
