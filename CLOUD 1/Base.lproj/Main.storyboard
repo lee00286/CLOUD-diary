@@ -687,7 +687,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P79-Yg-0TC">
-                                <rect key="frame" x="40" y="76" width="334" height="616"/>
+                                <rect key="frame" x="40" y="113" width="334" height="616"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FtV-Ob-hbC">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -728,23 +728,12 @@
                                     <constraint firstItem="7MY-zH-8Vg" firstAttribute="height" secondItem="FtV-Ob-hbC" secondAttribute="height" id="fDf-5J-Ks9"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq0-Sy-AUI">
-                                <rect key="frame" x="40" y="669" width="334" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bg4-3m-T0H"/>
-                                </constraints>
-                                <state key="normal" title="Save"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zge-G4-E0T" firstAttribute="trailing" secondItem="P79-Yg-0TC" secondAttribute="trailing" constant="40" id="5GA-Lf-Yxa"/>
                             <constraint firstItem="P79-Yg-0TC" firstAttribute="leading" secondItem="Zge-G4-E0T" secondAttribute="leading" constant="40" id="8Tz-dZ-dBE"/>
-                            <constraint firstItem="Tq0-Sy-AUI" firstAttribute="leading" secondItem="Zge-G4-E0T" secondAttribute="leading" constant="40" id="H1t-3m-Zk4"/>
-                            <constraint firstItem="P79-Yg-0TC" firstAttribute="top" secondItem="Zge-G4-E0T" secondAttribute="top" constant="20" id="gbU-Qv-GOu"/>
-                            <constraint firstItem="Tq0-Sy-AUI" firstAttribute="centerX" secondItem="cxd-Pb-5Nz" secondAttribute="centerX" id="i5D-Gt-SoI"/>
-                            <constraint firstItem="Zge-G4-E0T" firstAttribute="trailing" secondItem="Tq0-Sy-AUI" secondAttribute="trailing" constant="40" id="jWj-s2-ChM"/>
-                            <constraint firstItem="Zge-G4-E0T" firstAttribute="bottom" secondItem="Tq0-Sy-AUI" secondAttribute="bottom" constant="40" id="z8b-H7-ch7"/>
+                            <constraint firstItem="P79-Yg-0TC" firstAttribute="centerY" secondItem="cxd-Pb-5Nz" secondAttribute="centerY" id="izq-Gj-zFQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zge-G4-E0T"/>
                     </view>
@@ -753,14 +742,7 @@
                         <outlet property="courseToDo" destination="yIy-a3-Pzc" id="8Iz-NM-wep"/>
                         <outlet property="detailToDo" destination="pgb-ew-S6n" id="cNK-CT-cNC"/>
                         <outlet property="duedateToDo" destination="fdy-Rn-eyn" id="Z7K-2p-jec"/>
-                        <outlet property="inputOutlet" destination="P79-Yg-0TC" id="Yuo-Ys-bIb"/>
                         <outlet property="priorityToDo" destination="7MY-zH-8Vg" id="HeZ-bK-h4U"/>
-                        <outlet property="taskCourseOutlet" destination="yIy-a3-Pzc" id="ITw-EE-K11"/>
-                        <outlet property="taskDetailOutlet" destination="pgb-ew-S6n" id="OBO-G0-ale"/>
-                        <outlet property="taskDueDateOutlet" destination="fdy-Rn-eyn" id="zsx-0H-Ua9"/>
-                        <outlet property="taskNameOutlet" destination="FtV-Ob-hbC" id="kER-5F-gZc"/>
-                        <outlet property="taskPriorityOutlet" destination="7MY-zH-8Vg" id="sII-mW-xMO"/>
-                        <outlet property="taskTypeOutlet" destination="lNN-mo-yKS" id="47B-Yu-CJk"/>
                         <outlet property="titleToDo" destination="FtV-Ob-hbC" id="bYP-Kz-eq4"/>
                         <outlet property="typeToDo" destination="lNN-mo-yKS" id="9x8-Ct-MQE"/>
                     </connections>
