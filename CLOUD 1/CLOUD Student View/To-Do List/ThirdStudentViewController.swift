@@ -10,7 +10,15 @@ import UIKit
 
 class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
+    
     var data: [String] = []
+    //var dataCourse: [String] = []
+    
+    var selectedRow: Int = -1
+    //var selectedCourse: Int = -1
+    
+    var newRowText: String = ""
+    //var newRowCourse: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +28,7 @@ class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITab
         table.delegate = self
         
         // Add title to the navigation bar
-        self.title = "To-Do List"
+        self.title = "O"
         // Make the title in larger font
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -35,6 +43,25 @@ class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITab
         load()
     }
     
+    // Data coming back to ThirdStudentViewController
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // If -1, then no row is selected
+        if selectedRow == -1 {
+            // Do nothing
+            return
+        }
+        
+        data[selectedRow] = newRowText
+        // If there's no text inside, automatically delete ToDo
+        if newRowText == "" {
+            data.remove(at: selectedRow)
+        }
+        
+        table.reloadData()
+        save()
+    }
+    
     // Creates a new To-Do
     @objc func addToDo() {
         // If in editing mode, disable add note functionality
@@ -43,7 +70,7 @@ class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         // Name of new note
-        let name: String = "Item \(data.count + 1)"
+        let name: String = ""
         data.insert(name, at: 0)
         
         // Add row
@@ -54,7 +81,7 @@ class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITab
         // Save memory
         save()
         
-        //table.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+        table.selectRow(at: indexPath, animated: true, scrollPosition: .none)
         
         // Connect to To-Do page
         self.performSegue(withIdentifier: "detail", sender: nil)
@@ -95,10 +122,21 @@ class ThirdStudentViewController: UIViewController, UITableViewDataSource, UITab
         self.performSegue(withIdentifier: "detail", sender: nil)
     }
     
+    // setTextTitle; ThirdStudentViewController is sending data to ThirdStudetDetailViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailView: ThirdStudentDetailViewController = segue.destination as! ThirdStudentDetailViewController
+        selectedRow = table.indexPathForSelectedRow!.row
+        //selectedCourse = table.indexPathForSelectedRow!.row
+        detailView.masterView = self
+        detailView.setTextTitle(t: data[selectedRow])
+    }
+    
     // Save data
     func save() {
         // Associate data with the key "todos" to extract data in load()
         UserDefaults.standard.set(data, forKey: "todos")
+        // Associate data with the key "course" to extract data in load()
+        //UserDefaults.standard.set(dataCourse, forKey: "course")
     }
     
     // Load data

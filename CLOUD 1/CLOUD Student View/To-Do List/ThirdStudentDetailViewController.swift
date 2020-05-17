@@ -16,18 +16,22 @@ class ThirdStudentDetailViewController: UIViewController, UIPickerViewDelegate, 
     @IBOutlet weak var priorityToDo: UITextField!
     @IBOutlet weak var duedateToDo: UIDatePicker!
     
+    var text: String = ""
+    var textCourse: String = ""
     // Add data to type picker
     var typeToDoData = [["1", "2", "3", "4", "5", "6", "7"],
-                      ["a", "b", "c", "d", "e", "f", "g", "j", "i", "j"],
-                      ["!", "#", "$", "#"],
-                      ["w", "x", "y", "z"]]
+                        ["a", "b", "c", "d", "e", "f", "g", "j", "i", "j"],
+                        ["!", "#", "$", "#"],
+                        ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ"]]
+    
+    var masterView: ThirdStudentViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        titleToDo.text = "New ToDo"
-        //courseToDo.text = "New Course"
+        titleToDo.text = text
+        courseToDo.text = textCourse
         //detailToDo.text = "New Detail"
         //priorityToDo.text = "New Priority"
         
@@ -35,8 +39,27 @@ class ThirdStudentDetailViewController: UIViewController, UIPickerViewDelegate, 
         self.typeToDo.dataSource = self
     }
     
+    // UITextField; titleToDo
+    // Set text from the ThirdStudentViewController
+    func setTextTitle(t: String) {
+        text = t
+        // If view is not loaded, then update titleToDo
+        if isViewLoaded {
+            titleToDo.text = t
+        }
+    }
     
-    // typeToDo
+    // UITextField; courseToDo
+    // Set text from the ThirdStudentViewController
+    func setTextCourse(t: String) {
+        textCourse = t
+        // If view is not loaded, then update courseToDo
+        if isViewLoaded {
+            courseToDo.text = t
+        }
+    }
+    
+    // UIPickerView
     // Number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return typeToDoData.count
@@ -53,7 +76,15 @@ class ThirdStudentDetailViewController: UIViewController, UIPickerViewDelegate, 
     
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // This method is triiggered whenever user makes a change to the picker selection
+        // This method is triggered whenever user makes a change to the picker selection
         // The parameter named row and component represents what was selected
+    }
+    
+    // Leaving ThirdStudentDetailViewController
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        masterView.newRowText = titleToDo.text!
+        //masterView.newRowCourse = courseToDo.text!
+        //titleToDo.resignFirstResponder()
     }
 }
