@@ -13,16 +13,12 @@ class ThirdStudentDetailViewController: UIViewController, UIPickerViewDelegate, 
     @IBOutlet weak var typeToDo: UIPickerView!
     @IBOutlet weak var courseToDo: UITextField!
     @IBOutlet weak var detailToDo: UITextField!
-    @IBOutlet weak var priorityToDo: UITextField!
     @IBOutlet weak var duedateToDo: UIDatePicker!
     
     var text: String = ""
     var textCourse: String = ""
     // Add data to type picker
-    var typeToDoData = [["1", "2", "3", "4", "5", "6", "7"],
-                        ["a", "b", "c", "d", "e", "f", "g", "j", "i", "j"],
-                        ["!", "#", "$", "#"],
-                        ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ"]]
+    var typeToDoData = [["Assignment", "Exam", "Prepare", "Project", "Quiz", "Study", "Task"]]
     
     var masterView: ThirdStudentViewController!
     
@@ -33,7 +29,6 @@ class ThirdStudentDetailViewController: UIViewController, UIPickerViewDelegate, 
         titleToDo.text = text
         courseToDo.text = textCourse
         //detailToDo.text = "New Detail"
-        //priorityToDo.text = "New Priority"
         
         self.typeToDo.delegate = self
         self.typeToDo.dataSource = self
