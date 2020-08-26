@@ -15,7 +15,6 @@ jobs:
       with:
         REPO_NAME: 'lee00286/CLOUD-diary'
         CONTRIBUTOR: '## Contributors'
-        
         COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
