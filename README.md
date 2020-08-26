@@ -27,7 +27,7 @@ This project is an XCode application on iOS software that functions as a calenda
   * YouTube Riley Norris: To-do App in Swift
   * YouTube Link: https://youtu.be/orkHnbhjBJs
 
-## Contributors
+## Contributors ✨
 
 <table>
 <tr>
