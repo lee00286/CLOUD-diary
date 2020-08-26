@@ -29,5 +29,17 @@ This project is an XCode application on iOS software that functions as a calenda
 
 ## Contributors
 
+<table>
+<tr>
+    <td align="center">
+        <a href=https://github.com/lee00286>
+            <img src=https://avatars1.githubusercontent.com/u/33945159?v=4 width="100;" alt=Yena Lee/>
+            <br />
+            <sub style="font-size:14px"><b>Yena Lee</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+
 
 
