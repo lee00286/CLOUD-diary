@@ -26,3 +26,5 @@ This project is an XCode application on iOS software that functions as a calenda
 5. Student: ThirdViewController (add to-do doesn't work now)
   * YouTube Riley Norris: To-do App in Swift
   * YouTube Link: https://youtu.be/orkHnbhjBJs
+
+## Contributors
