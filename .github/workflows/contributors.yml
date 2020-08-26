@@ -1,7 +1,7 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '50 16 * * *'
+    - cron:  '20 20 * * *'
 # push:
 #   branches:
 #     - master
@@ -16,7 +16,7 @@ jobs:
         REPO_NAME: 'lee00286/CLOUD-diary'
         CONTRIBUTOR: '## Contributors'
         
-        COLUMN_PER_ROW: '7'
+        COLUMN_PER_ROW: '6'
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         IMG_WIDTH: '100'
         FONT_SIZE: '14'
