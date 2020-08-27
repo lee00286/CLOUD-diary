@@ -38,6 +38,13 @@ This project is an XCode application on iOS software that functions as a calenda
             <sub style="font-size:14px"><b>Yena Lee</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href=https://github.com/duck-ling>
+            <img src=https://avatars1.githubusercontent.com/u/70314850?v=4 width="100;" alt=duck-ling/>
+            <br />
+            <sub style="font-size:14px"><b>duck-ling</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
