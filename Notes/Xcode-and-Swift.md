@@ -1,8 +1,5 @@
-## Xcode Tutorial Reference
-  * https://youtu.be/09TeUXjzpKs
-
-## Notes
-### April 3, 2020
+# Notes
+## April 3, 2020
 Lesson 01: Xcode Essentials
   * How to create a new Xcode project (Swift)
   * Xcode Interface
@@ -16,7 +13,7 @@ Lesson 02: Auto Layout Tutorial
   * Constraint: Rule that dictates how an element is sized or positions relative to another element
   * exercise) Log-in page
 
-### April 4, 2020
+## April 4, 2020
 Lesson 03: Stack Views Tutorial
   * Stack View: User interface element that acts like a container for other elements
       - Arrange elements inside of stack view 
@@ -36,7 +33,7 @@ Lesson 04: First User Interface
   * Can use stack view of stack views
   * exercise) Player vs. CPU card game interface
 
-### April 6, 2020
+## April 6, 2020
 Lesson 05: Swift Basics - Part I
   * What is playground
   * Commands in Swift
@@ -66,7 +63,7 @@ Lesson 07: Swift Basics - Part III
           - Property
   * Use "." to access methods and properties inside the class
 
-### April 7, 2020
+## April 7, 2020
 Lesson 08: Connecting Elements
   * ViewController.swift
       - : UIViewController: Subclassing; Way for classes to build-off of each other
@@ -86,3 +83,6 @@ Lesson 10: Coding Logic
       - <name>.text = "": Assign String "" to <name>
       - String(<variable>): Convert datatype of <variable> to String
   * exercise) Edit exercise done in lesson 09
+
+# Xcode Tutorial Reference
+  * https://youtu.be/09TeUXjzpKs
